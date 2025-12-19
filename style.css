@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF0F5; /* светло-розовый фон */
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Заголовок страницы */
+h1 {
+    color: #4B0082; /* тёмно-фиолетовый */
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Подзаголовок */
+h2 {
+    color: #FF8C00; /* тёплый оранжевый */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px;
+}
+
+/* Блок с описанием */
+.description-block {
+    background-color: #FFFACD; /* очень светло-жёлтый */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description-block p {
+    color: #006400; /* тёмно-зелёный */
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Блок с цитатой */
+.quote-block {
+    background-color: #E6F7FF; /* бледно-голубой */
+    padding: 15px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-left: 5px solid #4B0082;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quote-block blockquote {
+    color: #555; /* серый */
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+    
+    h2 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+    
+    .description-block,
+    .quote-block {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .description-block p {
+        font-size: 16px;
+    }
+    
+    .quote-block blockquote {
+        font-size: 18px;
+    }
+}
